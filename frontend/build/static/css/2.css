@@ -1,0 +1,29 @@
+/**
+ * =================================================================
+ * Main Stylesheet Entry Point
+ *
+ * Project: Robotech we assignment
+ * Author: Shifa Khanum
+ * Date: 23 August 2025
+ *
+ * Description:
+ * This file serves as the primary CSS entry point. It uses
+ * Tailwind CSS directives to inject the framework's base styles,
+ * component classes, and utility classes into the final build.
+ * Customizations should be added below these imports or in
+ * separate imported files.
+ * =================================================================
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * You can add your own custom global styles here if needed.
+ * For example:
+ *
+ * body {
+ * @apply bg-gray-50 dark:bg-gray-900;
+ * }
+ */
