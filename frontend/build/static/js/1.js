@@ -1,7 +1,7 @@
 /**
  * =================================================================
  * Project: My Quiz App
- * Author: [Your Name Here]
+ * Author: Shifa Khanum
  * Date: August 23, 2025
  *
  * Description:
