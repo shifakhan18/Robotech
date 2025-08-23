@@ -2,7 +2,7 @@ Flashcard Quiz AppA modern and interactive web application built with React that
 Navigate to the project directory:cd your-repo-name
 Install NPM packages:npm install
 Start the development server:npm start
-The application will open automatically in your browser at http://localhost:3000.Available ScriptsIn the project directory, you can run:npm start: Runs the app in development mode.npm test: Launches the test runner in interactive watch mode.npm run build: Builds the app for production to the build folder.npm run eject: Removes the single dependency and copies all configuration files and transitive dependencies (webpack, Babel, ESLint, etc.) right into your project. Note: this is a one-way operation.Project StructureThe project follows the standard create-react-app folder structure:/
+The application will open automatically in your browser at http://localhost:3000.Available ScriptsIn the project directory, you can run:npm start: Runs the app in development mode.npm test: Launches the test runner in interactive watch mode.npm run build: Builds the app for production to the build folder.npm run eject: Note: this is a one-way operation. This removes the single build dependency from your project and copies all configuration files and transitive dependencies (webpack, Babel, etc.) right into your project.Project StructureThe project follows the standard create-react-app folder structure:/
 ├── public/
 │   ├── index.html
 │   ├── manifest.json
