@@ -1,32 +1,100 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta 
-      name="description" 
-      content="Web site created using create-react-app" 
-    />
-    
-    <!-- App Icons -->
-    <link rel="apple-touch-icon" href="/logo192.png" />
-    
-    <!-- Manifest for PWA -->
-    <link rel="manifest" href="/manifest.json" />
-    
-    <!-- Title -->
-    <title>Quiz App</title>
-    
-    <!-- Scripts & Styles -->
-    <script defer="defer" src="/static/js/main.0d23a4f4.js"></script>
-    <link href="/static/css/main.e529152e.css" rel="stylesheet" />
-  </head>
 
-  <body>
+    <title>Quiz App | Test Your Knowledge</title>
+    <meta name="theme-color" content="#4F46E5" />
+    <meta name="description" content="A fun and interactive quiz application built with React. Choose a topic, answer questions, and challenge yourself!" />
+
+    <meta property="og:title" content="Quiz App | Test Your Knowledge" />
+    <meta property="og:description" content="Challenge yourself with quizzes on various topics. Built with React." />
+    <meta property="og:image" content="/logo512.png" />
+    <meta property="og:url" content="https://your-app-url.com" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <link rel="manifest" href="/manifest.json" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link href="/static/css/main.e529152e.css" rel="stylesheet" />
+    <script defer="defer" src="/static/js/main.0d23a4f4.js"></script>
+
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f9fafb; /* Light gray background */
+      }
+      .app-loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+      }
+      .spinner {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border-left-color: #4F46E5; /* Indigo color */
+        animation: spin 1s ease-in-out infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .loading-text {
+        margin-top: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25rem;
+        color: #374151; /* Darker gray text */
+      }
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #4F46E5;
+        color: white;
+        padding: 8px;
+        z-index: 100;
+        transition: top 0.3s;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
+    </style>
+</head>
+
+<body>
+    <a href="#root" class="skip-link">Skip to main content</a>
+
     <noscript>
-      You need to enable JavaScript to run this app.
+      <div style="padding: 20px; text-align: center; background-color: #fef2f2; color: #991b1b;">
+        <h2>JavaScript is Disabled</h2>
+        <p>This application requires JavaScript to run. Please enable it in your browser settings and refresh the page.</p>
+      </div>
     </noscript>
-    <div id="root"></div>
-  </body>
+
+    <div id="root">
+        <div class="app-loading">
+            <div class="spinner"></div>
+            <p class="loading-text">Loading Quiz...</p>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 1rem; font-size: 0.9rem; color: #6b7280;">
+        <p>&copy; 2025 Quiz App. Created by [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
 </html>
